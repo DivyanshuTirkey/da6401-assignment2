@@ -4,9 +4,9 @@ from lightning.pytorch.loggers import WandbLogger
 from lightning.pytorch.callbacks import EarlyStopping, ModelCheckpoint
 import wandb
 
-from model import NatureCNN
-from data import NatureDataModule
-from utils import visualize_model
+from .model import NatureCNN
+from .data import NatureDataModule
+from .utils import visualize_model
 
 def train_sweep():
     """Train a model with the specified hyperparameters and log results to W&B"""

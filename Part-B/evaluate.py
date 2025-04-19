@@ -1,7 +1,7 @@
 import torch
 import wandb
 from tqdm import tqdm
-from utils import visualize_predictions
+from .utils import visualize_predictions
 
 def evaluate_model(model, data_module, config):
     """Evaluate a model on the test set"""

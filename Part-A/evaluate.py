@@ -3,9 +3,9 @@ import lightning as L
 from lightning.pytorch.loggers import WandbLogger
 import wandb
 
-from model import NatureCNN
-from data import NatureDataModule
-from utils import visualize_test_predictions, visualize_filters
+from .model import NatureCNN
+from .data import NatureDataModule
+from .utils import visualize_test_predictions, visualize_filters
 
 def evaluate_best_model(best_config):
     """Evaluate the best model from the sweep on the test set"""

@@ -3,11 +3,11 @@ import torch
 import wandb
 import os
 
-from model import PretrainedModel
-from data import NatureDataModule
-from train import train_model
-from evaluate import evaluate_model
-from utils import download_dataset
+from .model import PretrainedModel
+from .data import NatureDataModule
+from .train import train_model
+from .evaluate import evaluate_model
+from .utils import download_dataset
 
 def main():
     parser = argparse.ArgumentParser(description="Fine-tune pre-trained models on iNaturalist dataset")

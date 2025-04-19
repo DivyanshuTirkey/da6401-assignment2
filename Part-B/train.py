@@ -4,7 +4,7 @@ import torch.optim as optim
 import wandb
 import os
 from tqdm import tqdm
-from utils import visualize_predictions, plot_training_curves, count_parameters
+from .utils import visualize_predictions, plot_training_curves, count_parameters
 
 def train_model(model, data_module, config):
     """Train a model with the specified configuration"""

@@ -1,7 +1,7 @@
 import wandb
 import pandas as pd
 import numpy as np
-from train import train_sweep
+from .train import train_sweep
 
 # WandB sweep configuration
 sweep_config = {

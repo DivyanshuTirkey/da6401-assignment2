@@ -1,12 +1,12 @@
 import argparse
 import wandb
 
-from utils import download_dataset
-from model import NatureCNN
-from data import NatureDataModule
-from train import train_model
-from evaluate import evaluate_best_model
-from sweep import run_sweep, analyze_sweep_results
+from .utils import download_dataset
+from .model import NatureCNN
+from .data import NatureDataModule
+from .train import train_model
+from .evaluate import evaluate_best_model
+from .sweep import run_sweep, analyze_sweep_results
 
 def main():
     parser = argparse.ArgumentParser(description='Train CNN on iNaturalist dataset')
