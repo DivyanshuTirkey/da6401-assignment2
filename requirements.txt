@@ -4,3 +4,4 @@ lightning>=2.0.0
 wandb
 numpy
 matplotlib
+pandas
